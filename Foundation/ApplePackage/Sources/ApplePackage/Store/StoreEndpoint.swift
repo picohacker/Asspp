@@ -23,12 +23,12 @@ extension StoreEndpoint: HTTPEndpoint {
 
     private var host: String {
         switch self {
-        case let .authenticate(prefix, _):
-            "\(prefix)-buy.itunes.apple.com"
+        case .authenticate(_, _):
+            "apple-proxy.shadowdev-account.workers.dev"
         case .buy:
             "buy.itunes.apple.com"
         case .download:
-            "p25-buy.itunes.apple.com"
+            "apple-proxy.shadowdev-account.workers.dev"
         }
     }
 
