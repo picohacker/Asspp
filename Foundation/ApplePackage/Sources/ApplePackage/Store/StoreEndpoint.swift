@@ -37,7 +37,7 @@ extension StoreEndpoint: HTTPEndpoint {
         case let .authenticate(_, guid):
             "/WebObjects/MZFinance.woa/wa/authenticate?guid=\(guid)"
         case .buy:
-            "/WebObjects/MZBuy.woa/wa/buyProduct"
+            "/WebObjects/MZFinance.woa/wa/buyProduct"
         case let .download(guid):
             "/WebObjects/MZFinance.woa/wa/volumeStoreDownloadProduct?guid=\(guid)"
         }
